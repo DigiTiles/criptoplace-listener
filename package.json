@@ -1,0 +1,16 @@
+{
+  "name": "criptoplace-listener",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js",
+    "image": "node image.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "jimp": "^0.16.1",
+    "web3": "^1.7.3"
+  }
+}
