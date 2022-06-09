@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "node index.js",
+    "listener": "node listener.js",
+    "retrospective": "node retrospective.js",
     "image": "node image.js"
   },
   "author": "",
