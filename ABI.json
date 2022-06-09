@@ -1,0 +1,48 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "int256",
+        "name": "x",
+        "type": "int256"
+      },
+      {
+        "internalType": "int256",
+        "name": "y",
+        "type": "int256"
+      },
+      {
+        "internalType": "string",
+        "name": "image",
+        "type": "string"
+      }
+    ],
+    "name": "updateTile",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "number",
+        "name": "_x",
+        "indexed": true,
+        "type": "int256"
+      },
+      {
+        "internalType": "number",
+        "name": "_y",
+        "indexed": true,
+        "type": "int256"
+      },
+      {
+        "name": "image",
+        "type": "string"
+      }
+    ],
+    "name": "UpdateTile",
+    "outputs": [],
+    "type": "event"
+  }
+]
