@@ -3,10 +3,10 @@ const Web3 = require('web3');
 const Jimp = require('jimp');
 const fs = require("fs");
 
-const web3 = new Web3('ws://127.0.0.1:8545');
+const web3 = new Web3('wss://bsc-testnet.publicnode.com');
 
 
-const contract = new web3.eth.Contract(JSON.parse(fs.readFileSync("./ABI.json")), '0x61c7230977b55DfaB8363E68F9536B88443af98F');
+const contract = new web3.eth.Contract(JSON.parse(fs.readFileSync("./ABI.json")), '0x36c7e3b5D136635202F0392235C15cF537042167');
 
 async function getEvents() {
     contract.events.UpdateTile(async (err, data) => {
