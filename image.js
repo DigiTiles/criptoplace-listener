@@ -5,7 +5,7 @@ const tilesPath = './tiles';
 
 const zeroPoint = 33554432;
 
-module.exports = async function (_x, _y, imageGet) {
+async function imageProc(_x, _y, imageGet) {
     const image = new Jimp(16, 16, 0xffffffff);
     await image.composite(imageGet, 0, 0);
 
@@ -32,4 +32,6 @@ module.exports = async function (_x, _y, imageGet) {
         await tileImage.write(fileName);
     }
 }
+
+module.exports = {imageProc}
 
