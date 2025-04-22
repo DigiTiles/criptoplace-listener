@@ -21,7 +21,7 @@ const options = {
 
 const web3 = new Web3(new Web3.providers.WebsocketProvider('wss://bsc-testnet.publicnode.com', options));
 
-const contract = new web3.eth.Contract(JSON.parse(fs.readFileSync("./ABI.json")), '0x3C27c4100dbC3Ee94Eb3600610b0e7A4a6acCf0D');
+const contract = new web3.eth.Contract(JSON.parse(fs.readFileSync("./ABI.json")), '0xADfd98b62505fd259737DB55FAd7E993CA34fC31');
 
 async function getEvents() {
     webSocketStart();
