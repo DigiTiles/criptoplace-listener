@@ -1,7 +1,7 @@
-const imageProc = require('./image');
-const Web3 = require('web3');
-const Jimp = require('jimp');
-const fs = require("fs");
+import { imageProc } from './image.js';
+import Web3 from 'web3';
+import Jimp from 'jimp';
+import fs from 'fs';
 
 const web3 = new Web3('wss://bsc-testnet.publicnode.com');
 

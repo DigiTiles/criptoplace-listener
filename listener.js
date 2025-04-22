@@ -1,8 +1,9 @@
-const {imageProc} = require('./image');
-const Web3 = require('web3');
-const Jimp = require('jimp');
-const fs = require("fs");
-const {webSocketStart} = require("./tile-watcher-server");
+import { imageProc } from './image.js';
+import Web3 from 'web3';
+import Jimp from 'jimp';
+import fs from 'fs';
+import { webSocketStart } from './tile-watcher-server.js';
+
 
 const options = {
     timeout: 30000,
