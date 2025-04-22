@@ -8,7 +8,7 @@ export async function webSocketStart() {
     const __filename = fileURLToPath(import.meta.url);
     const __dirname = dirname(__filename);
 
-    const wss = new WebSocketServer({ port: 7070 });
+    const wss = new WebSocketServer({ port: 7077 });
 
     const tileDir = path.join(__dirname, 'tiles');
 
